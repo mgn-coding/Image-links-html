@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Image Links</title>
+        <style>
+             /* Basic CSS for grid layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust as needed */
+    gap: 10px; /* Adjust spacing between items */
+  }
+
+  .grid-item {
+    overflow: hidden;
+    border: 1px solid #ccc; /* Border around each image */
+  }
+
+  .grid-item img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    display:block; /* Remove any default inline spacing */
+  }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ol>
+                <li><a href="#Home"> Home</a></li>
+                <li><a href="#Gallery"> Gallery</a></li>
+                <li><a href="#Menu"> Menu</a></li>
+            </ol>
+        </nav>
+        <section id = Home>
+            <h2>Home</h2>
+            <p>Welcome to my webpage.<br>Let's talk about technology, nature, and food.</p>
+            <a href = "https://www.forbes.com/sites/bernardmarr/2022/01/05/the-10-tech-trends-that-will-transform-our-world/?sh=60b96ed1457a "
+                target="_blank"><img src="https://imageio.forbes.com/specials-images/imageserve/61d52d4e3a76ed81ac034ea8/The-10-Tech-Trends-That-Will-Transform-Our-World/960x0.jpg?format=jpg&width=1440 "
+            alt= "An image related to technology" style="max-width:400px;"></a>
+         </section>
+
+         <section id = Gallery>
+            <h2>Gallery</h2>
+            <div class="grid-container">
+              <a class="grid-item" href="https://www.nature.org/en-us/" target="_blank">
+              <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/w/o/WOPA160517_D056-resized.jpg?crop=864%2C0%2C1728%2C2304&wid=600&hei=800&scl=2.88" alt="The forest">
+              </a>
+              <a class="grid-item" href="https://www.pexels.com/photo/scenic-view-of-waterfalls-1598073/ " target="_blank">
+              <img src="https://images.pexels.com/photos/1598073/pexels-photo-1598073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " alt="A waterfall">
+              </a>
+              <a class="grid-item" href="https://www.pexels.com/photo/seaside-994605/">
+                <img src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="An image of the ocean">
+              </a>
+            </div>
+         </section>
+
+         <section id = Menu>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="https://www.cookist.com/spaghetti-bolognese/" target="_blank"> <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/06/THUMB-LINK-2020-2-1200x675.jpg" alt = "A plate of spaghetti-bolognese" width="300"  height="200"  class="image-align"> <p>Spaghetti-bolognese</p> </a></li>
+                <li><a href="https://www.cookist.com/bbq-chicken-pizza/" target="_blank"> <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2022/02/bbq-chicken-pizza-1-1200x675.jpg" alt="Bbq-chicken-pizza" width="300"  height="200" class="image-align"> <p>Bbq-chicken-pizza</p> </a></li>
+                <li><a href="https://www.cookist.com/beef-stew-recipe/ " target="_blank"><img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2023/03/stew-1200x675.jpg " alt="A plate of beef stew" width="300" height="200" class="image-align"> <p>Beef stew</p></a></li>
+            </ul>
+        </section>
+    </body>
+</html>
